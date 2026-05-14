@@ -3,7 +3,7 @@ name: Build StyleWrap
 on:
   push:
     branches:
-      - main
+      - 1.0.0
 
 jobs:
   build:
