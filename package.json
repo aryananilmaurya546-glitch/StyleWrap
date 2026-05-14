@@ -1,4 +1,12 @@
 {
   "name": "stylewrap",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "build-css": "cleancss -o css/styleWrap.min.css css/styleWrap.css",
+    "build-js": "terser Js/styleWrap.js -o Js/styleWrap.min.js -c -m"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.39.0"
+  }
 }
