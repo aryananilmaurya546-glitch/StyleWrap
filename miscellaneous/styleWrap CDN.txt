@@ -1,0 +1,9 @@
+https://github.com/aryananilmaurya546-glitch/StyleWrap/blob/1.0.0/Js/styleWrap.js
+https://cdn.jsdelivr.net/gh/aryananilmaurya546-glitch/StyleWrap@1.0.0/Js/styleWrap.js
+
+
+https://github.com/aryananilmaurya546-glitch/StyleWrap/blob/1.0.0/Js/styleWrapMainUtil.js
+https://cdn.jsdelivr.net/gh/aryananilmaurya546-glitch/StyleWrap@1.0.0/Js/styleWrapMainUtil.js
+
+https://github.com/aryananilmaurya546-glitch/StyleWrap/blob/1.0.0/css/styleWrap.css
+https://cdn.jsdelivr.net/gh/aryananilmaurya546-glitch/StyleWrap@1.0.0/css/styleWrap.css
