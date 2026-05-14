@@ -1,1 +1,599 @@
+always use container
+<div class="container"></div>
 
+it is also needed because it help the script to run.
+
+nav bar
+<nav class="nav nav-primary">
+    <div class="nav-content">
+        <div class="nav-item">
+            <div class="nav-text-name">
+                <a href="index.html" class="nav-name-link c-light">hello</a>
+            </div>
+            <ul class="nav-list-content bg-primary" id="navBarContent">
+                <div class="nav-content-item">
+                    <li class="nav-list">
+                        <a href="https://www.blogfile.epizy.com" class="nav-list-link c-dark">blog file</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="https://www.hostingweb.epizy.com" class="nav-list-link c-dark">HositngWeb</a>
+                    </li>
+                    <li class="nav-list dropdown">
+                        <p onclick="openOption()">Options <li class="image-dropdown"></li></p>
+                    </li>
+                </div>
+                <div class="input-field">
+                    <form action="#" method="post">
+                        <input type="search" class="form-input w-70">
+                        <button type="submit" class="btn btnC-success">Submit</button>
+                    </form>
+                </div>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <p><li class="menu-image" onclick="openMenu()"></li></p>
+        </div>
+    </div>
+    <div class="options">
+        <p><a href="#" class="nav-list-link c-dark">Option 1</a></p>
+        <p><a href="#" class="nav-list-link c-dark">Option 2</a></p>
+        <p><hr></p>
+        <p><a href="#" class="nav-list-link c-dark">Option 3</a></p>
+    </div>
+</nav>
+
+nav bar with image
+<nav class="nav nav-image nav-primary">
+    <div class="nav-content">
+        <div class="nav-item">
+            <div class="nav-text-name">
+                <a href="index.html" class="nav-name-link c-dark"><img src="images/DemoAvatarImage.png" alt="This image is unable to show"></a>
+            </div>
+            <ul class="nav-list-content bg-primary" id="navBarContent">
+                <div class="nav-content-item">
+                    <li class="nav-list">
+                        <a href="https://www.blogfile.epizy.com" class="nav-list-link c-dark">blog file</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="https://www.hostingweb.epizy.com" class="nav-list-link c-dark">HositngWeb</a>
+                    </li>
+                    <li class="nav-list dropdown">
+                        <p onclick="openOption()">Options <li class="image-dropdown"></li></p>
+                    </li>
+                </div>
+                <div class="input-field">
+                    <form action="#" method="post">
+                        <input type="search" class="form-input w-70">
+                        <button type="submit" class="btn btnC-success">Submit</button>
+                    </form>
+                </div>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <p><li class="menu-image" onclick="openMenu()"></li></p>
+        </div>
+    </div>
+    <div class="options">
+        <p><a href="#" class="nav-list-link c-dark">Option 1</a></p>
+        <p><a href="#" class="nav-list-link c-dark">Option 2</a></p>
+        <p><hr></p>
+        <p><a href="#" class="nav-list-link c-dark">Option 3</a></p>
+    </div>
+</nav>
+
+//code for the change the backgorund color of the dropdown
+$(".nav-list-content").addClass('bg-primary');
+
+// if there is so much nav bar in the one page so use this 
+function customName(){
+    $(document).ready(function(){
+        $("#customNavBarContent").toggle();
+        ('.options').toggle(false);
+    })
+}
+
+footer
+<footer class="footer footer-primary">
+    <p class="text-c">Copyright 2022 to 2022</p>
+</footer>
+
+footer image and text
+<footer class="footer footer-img-text footer-danger">
+    <p><img src="images/DemoAvatarImage.png" alt="This is a good image" class="footer-image"></p>
+    <p class="text-c">Copyright 2022 to 2022</p>
+</footer>
+
+foooter image and text and link
+<footer class="footer footer-img-text-link footer-danger">
+    <p class="text-c">Copyright 2022 to 2022</p>
+    <p><img src="images/DemoAvatarImage.png" alt="This is a good image" class="footer-image"></p>
+    <p class="footer-link">
+        <a href="#" class="footer-link-text">Home</a>
+        <a href="#" class="footer-link-text">Contact</a>
+        <a href="#" class="footer-link-text">About</a>
+        <a href="#" class="footer-link-text">FAQ</a>
+        <a href="#" class="footer-link-text">Pricing</a>
+    </p>
+</footer>
+
+footer text and link
+<footer class="footer footer-text-link footer-danger">
+    <a href="#" class="footer-link-texts">Home</a>
+    <a href="#" class="footer-link-texts">Contact</a>
+    <a href="#" class="footer-link-texts">About</a>
+    <a href="#" class="footer-link-texts">FAQ</a>
+    <a href="#" class="footer-link-texts">Pricing</a>
+    <hr>
+    <div class="text-c">
+        Copyright 2022 to 2022
+    </div>
+</footer>
+
+footer with the social media icon
+<footer class="footer footer-text-icon-img footer-danger my-2">
+    <div class="footer-text-icon">
+        <img src="images/DemoAvatarImage.png" alt="This image is not loading">
+        <p>&copy; 2022 copyright reserved</p>
+    </div>
+    <div class="social-media-icon">
+        <!-- where the icon is written you can add an icon -->
+        <p class="social-media-icon-link"><a href="#">icon</a></p>
+        <p class="social-media-icon-link"><a href="#">icon</a></p>
+        <p class="social-media-icon-link"><a href="#">icon</a></p>
+    </div>
+</footer>
+
+form
+<form action="#" method="post">
+
+    <label class="form-label" for="email">Email</label>
+
+    <input type="text" class="form-input" id="email">
+    <label class="form-label" for="pass">Password</label>
+    <input type="password" class="form-input" id="pass">
+    <button type="submit" class="btn btnC-dark">Submit</button>
+</form>
+
+modal
+<!-- trigger the modal -->
+<button class="btn btnC-primary" onclick="show(this)" data-modal-name="modalNameSameToId">Launch Modal</button>
+
+<!-- Modal -->
+<div class="modal" id="modalNameSameToId">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close close-Modal-img" onclick="closeModal(this)" data-modal-close="modalNameSameToId"></button>
+        </div>
+        <div class="modal-body">
+            Modal Body.........
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btnC-secondary" onclick="closeModalBtn(this)" data-modal-close-btn="modalNameSameToId">Close</button>
+            <button type="button" class="btn btnC-primary">Save</button>
+        </div>
+    </div>
+</div>
+
+alert 
+<div class="alert alert-primary c-light">
+    <div class="alert-content">
+        <p>
+            <strong>Alert!</strong> Success
+        </p>
+        <button type="button" class="close-alert" onclick="closeAlert(this)" id="closeBtn"></button>
+    </div>
+</div>
+
+reponsive video
+<video src="How to upload the dynamic website Part 2.mp4" controls class="video-class"></video>
+
+responsie image tip
+<img src="hostingWeb.png" class="w-100">
+
+media object
+<div class="media-object">
+    <div class="media-image">
+        <img src="images/DemoAvatarImage.png" alt="The image is not showing because of some reason." class="media-object-img">
+    </div>
+    <div class="media-text">
+        <h3 class="my-1">Header</h3>
+        <hr>
+        <p>
+            <strong>Set Your own image or avatar in the image tag.</strong> <br>
+            <strong>You can also remove the hr tag if you dont need an horizantal line</strong> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam nihil, quod ipsam repellendus voluptas obcaecati excepturi et labore fugiat nobis nisi quo perferendis animi corrupti voluptate temporibus aperiam inventore accusantium est. Delectus possimus beatae recusandae corrupti porro soluta neque quisquam sunt labore commodi. Labore vel aliquam quo incidunt asperiores?
+        </p>
+    </div>
+</div>
+
+jumbotron
+<div class="jumboTron jumbotron-primary">
+    <div class="head-jumbotron">
+        <h1>Heading</h1>
+    </div>
+    <div class="text-jumbotron">
+        <p class="f-large">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis placeat, nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt totam beatae maxime cum quidem deleniti veritatis. Quasi ea ratione pariatur?</p>
+    </div>
+    <hr>
+    <div class="little-jumbotron-text">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, necessitatibus! Libero odio vitae consequuntur consequatur porro labore, quos ad eaque.</p>
+    </div>
+    <div class="learnMore">
+        <button class="btn btnC-info">Learn More</button>
+    </div>
+</div>
+
+carousel
+<div class="carouselContainer">
+    <div class="carousel">
+        <div class="imgCarouselDiv">
+            <img src="imagePath" alt="This image is not showing" class="imageCarousel">
+        </div>
+        <div class="imgCarouselDiv">
+            <img src="imagePath" alt="This image is not showing" class="imageCarousel">
+        </div>
+        <div class="imgCarouselDiv">
+            <img src="imagePath" alt="This image is not showing" class="imageCarousel">
+        </div>
+    </div>
+    <div class="buttonForNextPrev">
+        <div class="prevBtn">
+            <button onclick="prevBtn()">Prev</button>
+        </div>
+        <div class="nextBtn">
+            <button onclick="nextBtn()">Next</button>
+        </div>
+    </div>
+</div>
+
+notification
+<div class="notification notification-align-bottom-right bg-light">
+    <div class="notification-head">
+        <div class="notification-name-icon">
+            <img src="images/DemoAvatarImage.png" alt="This image is unable to show">
+            <h4>StyleWrap</h4>
+        </div>
+        <div class="notification-close">
+            <p>Just Now</p>
+            <img src="images/close.svg" alt="This image is unable to show" onclick="notification_close_icon(this)">
+        </div>
+    </div>
+    <div class="notification-body">
+        <p>A new notification has been arrived</p>
+    </div>
+    <div class="notification-footer">
+        <button class="btn btnC-primary notification-footer-action-button"><a href="https://www.google.com" target="_blank">Take action</a></button>
+        <button onclick="___close_modal_with_button___(this)" class="btn btnC-secondary">Close</button>
+    </div>
+</div>
+
+card
+<div class="card">
+    <div class="card-image">
+        <img src="images/DemoAvatarImage.png" alt="this image not there">
+    </div>
+    <div class="card-header">
+        <div class="card-header-title">
+            <h2>Card Title</h2>
+        </div>
+        <div class="card-header-body">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia autem accusamus aliquid odio inventore
+            </p>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button class="btn btnC-primary">Click Here</button>
+    </div>
+</div>
+
+card only text and link
+<div class="card mx-2">
+    <div class="card-body-link-text">
+        <div class="header-card-text">
+            <h2>This is a title</h2>
+        </div>
+        <div class="header-card-text-subtitle">
+            <h4>This is a subtitle</h4>
+        </div>
+        <div class="card-text-body">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia autem accusamus aliquid odio inventore
+            </p>
+        </div>
+        <div class="card-text-links">
+            <a href="#">This is link 1</a>
+            <a href="#">This is link 2</a>
+        </div>
+    </div>
+</div>
+
+multiple card row
+<div class="card-row">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/DemoAvatarImage.png" alt="this image not there">
+        </div>
+        <div class="card-header">
+            <div class="card-header-title">
+                <h2>Card Title</h2>
+            </div>
+            <div class="card-header-body">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia autem accusamus aliquid odio inventore
+                </p>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btnC-primary">Click Here</button>
+        </div>
+    </div>
+    <div class="card mx-2">
+        <div class="card-body-link-text">
+            <div class="header-card-text">
+                <h2>This is a title</h2>
+            </div>
+            <div class="header-card-text-subtitle">
+                <h4>This is a subtitle</h4>
+            </div>
+            <div class="card-text-body">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia autem accusamus aliquid odio inventore
+                </p>
+            </div>
+            <div class="card-text-links">
+                <a href="#">This is link 1</a>
+                <a href="#">This is link 2</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+form validaion
+
+form password validaion
+<div class="demoPasswordForm">
+    <form action="#">
+        <label class="form-lable" for="email">Email</label>
+        <input type="text" class="form-input" id="email">
+
+        <label class="form-lable" for="pass">Password</label>
+        <input type="pass" class="form-input" onkeyup="__checkPassCredentials__(this)" id="pass" required>
+        <div class="passwordCredential">
+            <div class="_____divThatContainCheckPasswordCredential_____">
+                <p class="check_password_credential"><p class="___showerOFtheObjectKey___"></p></p>
+            </div>
+            <div class="_____divThatContainCheckPasswordCredential_____">
+                <p class="check_password_credential"><p class="___showerOFtheObjectKey___"></p></p>
+            </div>
+            <div class="_____divThatContainCheckPasswordCredential_____">
+                <p class="check_password_credential"><p class="___showerOFtheObjectKey___"></p></p>
+            </div>
+            <div class="_____divThatContainCheckPasswordCredential_____">
+                <p class="check_password_credential"><p class="___showerOFtheObjectKey___"></p></p>
+            </div>
+            <div class="_____divThatContainCheckPasswordCredential_____">
+                <p class="check_password_credential"><p class="___showerOFtheObjectKey___"></p></p>
+            </div>
+        </div>
+        <input type="submit" class="btn btnC-primary my-2">
+    </form>
+</div>
+<script>
+    __form_password_check_object__ = {
+        "lowerClass": 1,
+        "upperClass": 1,
+        "number": 1,
+        "specialCharacter": 1,
+        "character": 8
+    }
+</script>
+
+form validaion if the textbox is empty normal it will only show an alert under the textbox
+<div class="demoPasswordForm">
+    <form action="#">
+        <div>
+            <label class="form-lable" for="email">Email</label>
+            <input type="text" class="form-input form-validation" id="email" onkeyup="___checkTheTextbox___(this)">
+            <p class="___checkIftheTextBoxIsFilled___"></p>  
+        </div>
+
+        <div>
+            <label class="form-lable" for="pass">Password</label>
+            <input type="pass" class="form-input form-validation" id="pass" onkeyup="___checkTheTextbox___(this)">
+            <p class="___checkIftheTextBoxIsFilled___"></p>  
+        </div>
+
+        <input type="submit" class="btn btnC-primary my-2">
+    </form>
+</div>
+
+form validaion if the textbox is empty or not with an correct and wrong sign
+<div class="demoPasswordForm">
+    <form action="#">
+        <div class="formCheckerInputDiv">
+            <label class="form-lable" for="email">Email</label>
+            <p class="__checkImageCorrection___"></p>  
+            <input type="text" class="form-input form-validation" id="email" onkeyup="___checkTheTextboxIsEmpty___(this)">
+        </div>
+
+        <div class="formCheckerInputDiv">
+            <label class="form-lable" for="pass">Password</label>
+            <p class="__checkImageCorrection___"></p>  
+            <input type="pass" class="form-input form-validation" id="pass" onkeyup="___checkTheTextboxIsEmpty___(this)">
+        </div>
+
+        <input type="submit" class="btn btnC-primary my-2">
+    </form>
+</div>
+
+form validaiton if the email is not matching his syntax
+<div class="demoEmail">
+    <form action="#">
+        <input type="text" class="form-input" id="email" onkeyup="___check_IF_the_email_match___(this)" required>
+        <p class="__checkImageCorrection___ForEmail___With___Alert"></p>
+        <input type="submit" class="btn btnC-primary my-2">
+    </form>
+</div>
+
+copy clipboard
+<div class="clipboardCopyText">
+    <div class="copyButton">
+        <button onclick="___copyClipboardText____(this)" id="____copyClipboardButton____" class='ClipBoardC-danger'>Copy</button>
+    </div>
+    <div class="copyInformation">
+        <textarea class="___copyClipboardText____Information w-100 p-0" id="___copyClipboardText__textarea__Information__Id">
+            <div>
+                <h1>
+                    This is demo of the clipBoard Copiyer :)
+                </h1>
+            </div>
+        </textarea>
+    </div>
+</div>
+
+tooltip
+<div class="toolTip">
+    <div class="____button_Of_TollTip____">
+        <button class="btn btnC-danger" onclick="___triggerToolTip____(this)">Click Me</button>
+    </div>
+    <div class="___here_toolTip_desc_will_show___">
+        <p>This is an ToolTip</p>
+    </div>
+</div>
+
+accordation
+<div class="accordation accordation-info">
+    <div class="accordation-dropdown" onclick="___openAccordation_dropdown___(this)">
+        <p class="accordation-image"></p>
+        <p>Accordation</p>
+    </div>
+    <div class="accordation-content">
+        <p>Hello this is accordation</p>
+    </div>
+</div>  
+
+collapse
+<div class="collapse">
+    <div class="collapse-button">
+        <button class="btn btnC-primary btn-xs" onclick="____collapse_component____(this)">click Me</button>
+    </div>
+    <div class="collapse-content animation-fade">
+        <div>
+            This is an div with the collapse
+        </div>
+    </div>
+</div>
+
+popover
+<div class="popovers">
+    <div class="popover__shower"></div>
+    <button class="btn btnC-danger btn-xxs" onclick="___triggerPopOvers____(this)" data-title="PopOver" data-description="This is an popover">Click Me</button>
+</div> 
+
+custom popover
+use this classes in your style sheet for edit the popover
+this three are main class
+.popover-content{
+    border: 1px solid #0d6efd;
+    width: 14%;
+}
+.popover-title{
+    border-bottom: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+}
+.popover-description{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+for make your popover should be same as button width
+
+set width property in the popover content 
+
+off canvas
+trigger offcanvas
+<button class="btn btnC-info" onclick="____trigger_offcanvase____(this)" data-offcanvase-target="canvase1">left offcavase</button>
+
+<div class="offcanvas offcanvas-left" data-offcanvase-name="canvase1">
+    <div class="offcanvas-header">
+        <h2>offcanvas</h2>
+        <div class="close-offcanvase" onclick="___close_button_offcanvase____(this)"></div>
+    </div>
+    <div class="offcanvas-content">
+        <p>
+            This is an offcanvase
+        </p>
+    </div>
+</div>
+
+designal dropdown
+<div class="designal-dropdown">
+    <button class="btn btnC-secondary designal-dropdown-button" onclick="____dropdown_button____(this)">Dropdown <p class="__button_dropdown_image__"></p></button>
+
+    <div class="designal-dropdown-menu">
+        <ul class="designal-dropdown-link">
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 2</a></li>
+            <li><a href="#">List 3</a></li>
+            <hr>
+            <li><a href="#">Secondary Link</a></li>
+        </ul>
+    </div>
+</div>
+
+with the arrow button at side
+<div class="designal-dropdown">
+    <div class="designal-dropdown-button-div">
+        <button class="btn btnC-secondary b-dark designal-dropdown-button">Dropdown</button>
+        <button class="btn btnC-secondary b-dark" onclick="____dropdown_button____arrow(this)"><p class="__button_dropdown_image__"></p></button>
+    </div>
+
+    <div class="designal-dropdown-menu">
+        <ul class="designal-dropdown-link">
+            <li><a href="#">List 1</a></li>
+            <li><a href="#">List 2</a></li>
+            <li><a href="#">List 3</a></li>
+            <hr>
+            <li><a href="#">Secondary Link</a></li>
+        </ul>
+    </div>
+</div>
+
+drodown with the form
+<div class="designal-dropdown">
+    <button class="btn btnC-secondary designal-dropdown-button" onclick="____dropdown_button____(this)">Dropdown <p class="__button_dropdown_image__"></p></button>
+
+    <div class="designal-dropdown-menu">
+        <ul class="designal-dropdown-link">
+            <form action="#" method="post">
+                <label class="form-label" for="email">Email</label>
+                <input type="text" class="form-input" id="email">
+                <label class="form-label" for="pass">Password</label>
+                <input type="password" class="form-input" id="pass">
+                <button type="submit" class="btn btnC-dark">Submit</button>
+            </form>
+        </ul>
+    </div>
+</div>
+
+dropdown with arrow buttton with the form
+<div class="designal-dropdown">
+    <div class="designal-dropdown-button-div">
+        <button class="btn btnC-secondary b-dark designal-dropdown-button">Dropdown</button>
+        <button class="btn btnC-secondary b-dark" onclick="____dropdown_button____arrow(this)"><p class="__button_dropdown_image__"></p></button>
+    </div>
+
+    <div class="designal-dropdown-menu">
+        <ul class="designal-dropdown-link">
+            <form action="#" method="post">
+                <label class="form-label" for="email">Email</label>
+                <input type="text" class="form-input" id="email">
+                <label class="form-label" for="pass">Password</label>
+                <input type="password" class="form-input" id="pass">
+                <button type="submit" class="btn btnC-dark">Submit</button>
+            </form>
+        </ul>
+    </div>
+</div>
